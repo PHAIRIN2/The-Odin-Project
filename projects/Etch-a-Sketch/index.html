@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Etch a Sketch</title>
+
+  <style>
+    #container {
+      width: 500px;
+      height: 500px;
+      border: solid 2px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .square {
+      border: solid 1px;
+      box-sizing: border-box;
+    }
+    button {
+      height: 40px;
+      background-color: rgb(97, 201, 222);
+      border: solid 1px;
+      font-size: 15px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <button id="sizeBtn">change Grid size</button>
+  <div id="container"></div>
+  <script>
+    const container = document.querySelector("#container")
+
+    function createGrid(size) {
+      container.innerHTML = "";
+      const squareSize = 100 / size;
+      const totalSquare = size * size;
+      for (let i = 0; i < totalSquare; i++) {
+        const square = document.createElement("div")
+        square.classList.add("square")
+
+        square.style.width = `${squareSize}%`
+        square.style.height = `${squareSize}%`
+
+        square.addEventListener("mouseover", () => {
+          square.style.backgroundColor = "black";
+        })
+        container.appendChild(square)
+      }
+    }
+    createGrid(16);
+
+sizeBtn.addEventListener("click", () => {
+  let userSize = parseInt(prompt("Specify the desired number of slots per row (maximum 100)"));
+  if (isNaN(userSize) || userSize < 1 || userSize > 100) {
+    alert("Please Enter the number between 1 and 100 only.")
+  } else {
+    createGrid(userSize)
+  }
+} )
+  </script>
+</body>
+</html>
