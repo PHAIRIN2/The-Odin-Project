@@ -1,0 +1,65 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+.bottom-button {
+  width: 214px;
+}
+.input-section {
+  width: 214px;
+  height: 100px;
+}
+.container {
+  padding: 10px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+}
+.basic-math button {
+  height: 30px;
+  width: 50px;
+  font-size: 20px;
+}
+
+.basic-math {
+  margin-bottom: 5px;
+}
+.number-math {
+  width: 150px;
+}
+.number-math button {
+  height: 30px;
+  width: 40px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+.math-section {
+  display: flex;
+  flex-direction: row;
+  width: 210px;
+}
+.right-section {
+  display: flex;
+  flex-direction: column;
+  width: 60px;
+}
+.delete-button {
+  height: 50px;
+  font-size: 15px;
+}
+.equal-button {
+  height: 85px;
+  margin-top: 3px;
+  font-size: 20px;
+}
+
+.number-math .clear-button {
+  width: 90px;
+}
+#input-space {
+  background-color: white;
+  height: 80px;
+}
