@@ -81,7 +81,7 @@ buttons.forEach((button) => {
       }
     } else {
       if (isCalculated) {
-        firstNumber = digit;
+       firstNumber = digit;
         display.textContent = firstNumber;
         isCalculated = false;
       } else {
