@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sing-Up Form</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="container">
+        <section class="section-1">
+          <div class="logo-section">
+            <img class="logo-odin" src="logo.png" />
+            <p class="font-logo">odin</p>
+          </div>
+        </section>
+        <section class="section-2">
+          <div class="text">
+            <p class="content">
+              This is not a real online service! You know you need something
+              like this in your life to help you realize your deepest dreams.
+              Sign up now to get started.
+            </p>
+            <p>You <em>know</em> you want to.</p>
+          </div>
+
+          <form action="#">
+            <div class="form">
+              <h2>Let's do this!</h2>
+              <div class="flex-direction">
+                <div>
+                  <div>
+                    <label for="First-name">
+                      FIRST NAME
+                      <input type="text" name="First-nme" required />
+                    </label>
+                  </div>
+                  <div>
+                    <label for="email">
+                      EMAIL
+                      <input type="email" name="email" required />
+                    </label>
+                  </div>
+                  <div>
+                    <label for="Password">
+                      PASSWORD
+                      <input
+                        type="password"
+                        name="password"
+                        minlength="7"
+                        maxlength="15"
+                        required
+                      />
+                    </label>
+                  </div>
+                </div>
+                <div class="singU-right">
+                  <div>
+                    <label for="Last-name">
+                      LAST NAME
+                      <input type="text" name="Last-name" required />
+                    </label>
+                  </div>
+                  <div>
+                    <label for="Phone-number">
+                      PHONE NUMBER
+                      <input
+                        type="tel"
+                        name="number"
+                        pattern="[0-9]{9,10}"
+                        required
+                      />
+                    </label>
+                  </div>
+                  <div>
+                    <label for="Confirm-password">
+                      CONFIRM PASSWORD
+                      <input
+                        type="Confirm-password"
+                        name="confirm-password"
+                        required
+                      />
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bottom">
+              <button>Create Account</button>
+              <p>Already have an account? <span>log in</span></p>
+            </div>
+          </form>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
